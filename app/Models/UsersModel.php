@@ -8,21 +8,16 @@ class UsersModel extends Model
 {
     // Nama tabel yang digunakan oleh model ini
     protected $table = 'users';
+protected $primaryKey = 'id';
 
-    // Nama primary key dari tabel
-    protected $primaryKey = 'id';
-
-    // Field yang diizinkan untuk diisi
-    protected $allowedFields = [
-        'email',
-        'username',
-        'fullname',
-        'photo_profile',
-        'id_kantor',
-        'password_hash',
-        'active',
-        'reset_at',
-    ];
+protected $allowedFields = [
+    'email',
+    'username',
+    'fullname',
+    'password_hash',
+    'id_kantor',
+    'photo_profile'
+];
 
     // Menggunakan timestamp untuk created_at dan updated_at
     protected $useTimestamps = true;

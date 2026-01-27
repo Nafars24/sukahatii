@@ -8,40 +8,40 @@ class Login extends BaseController
 {
     public function index()
     {
-        return view('auth/login', [
-            'title' => 'Login',
-        ]);
+        return view('auth/login');
     }
 
-    public function attempt()
+    public function authenticate()
     {
         $session = session();
 
-        $username = $this->request->getPost('username');
+        $email    = $this->request->getPost('email');
         $password = $this->request->getPost('password');
 
-        if (!$username || !$password) {
-            return redirect()->back()->with('error', 'Username dan password wajib diisi');
-        }
-
         $userModel = new UserModel();
-        $user = $userModel->where('username', $username)->first();
+
+        // Cari user berdasarkan EMAIL
+        $user = $userModel
+            ->where('email', $email)
+            ->first();
 
         if (!$user) {
-            return redirect()->back()->with('error', 'User tidak ditemukan');
+            return redirect()->back()->with('error', 'Email tidak ditemukan');
         }
 
-        // PASTIKAN password di DB adalah HASH
-        if (!password_verify($password, $user['password'])) {
+        // WAJIB pakai password_verify
+        if (!password_verify($password, $user['password_hash'])) {
             return redirect()->back()->with('error', 'Password salah');
         }
 
-        // SET SESSION LOGIN
+        // Set session
         $session->set([
-            'isLoggedIn' => true,
-            'user_id'    => $user['id'],
+            'user_id'    => $user['id'] ?? null,
+            'email'      => $user['email'],
             'username'   => $user['username'],
-            'role'       => $user['role'],
+            'fullname'   => $user['fullname'],
+            'id_kantor'  => $user['id_kantor'],
+            'isLoggedIn' => true,
         ]);
 
         return redirect()->to('/');
