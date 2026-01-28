@@ -1,10 +1,10 @@
-![O-Stock](https://github.com/josephines1/o-stock/blob/main/public/assets/img/readme/mockup_ostock.png "O-Stock")
+![SukaHati](https://github.com/josephines1/o-stock/blob/main/public/assets/img/readme/mockup_ostock.png "O-Stock")
 
-# O-Stock
-[![made-with-codeigniter4](https://img.shields.io/badge/Made%20with-CodeIgniter4-DD4814.svg)](https://www.codeigniter.com/) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%3F/Yes%21/blue?icon=github)](https://github.com/josephines1/o-stock)
+# SukaHati
+[![made-with-codeigniter4](https://img.shields.io/badge/Made%20with-CodeIgniter4-DD4814.svg)](https://www.codeigniter.com/) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%3F/Yes%21/blue?icon=github)](https://github.com/Nafars24/sukahatii)
 
-## O-Stock: Solusi Terbaik untuk Pengelolaan Stok Perusahaan Anda
-O-Stock adalah aplikasi pengelolaan stok yang dirancang untuk memudahkan Anda dalam mengelola data stok dan penjualan di seluruh cabang perusahaan Anda. Dengan fitur lengkap dan antarmuka yang intuitif, O-Stock membantu Anda mengoptimalkan pengelolaan inventaris dan memaksimalkan efisiensi bisnis Anda.
+## SukaHati: Solusi Terbaik untuk Pengelolaan Stok Perusahaan Anda
+SukaHati adalah aplikasi pengelolaan stok yang dirancang untuk memudahkan Anda dalam mengelola data stok dan penjualan di seluruh cabang perusahaan Anda. Dengan fitur lengkap dan antarmuka yang intuitif, SukaHati membantu Anda mengoptimalkan pengelolaan inventaris dan memaksimalkan efisiensi bisnis Anda.
 
 ## Requirements
 
@@ -14,36 +14,24 @@ O-Stock adalah aplikasi pengelolaan stok yang dirancang untuk memudahkan Anda da
 
 ## Versions & Features
 
-O-Stock hadir dalam dua versi: Free dan Premium. Berikut adalah perbedaan utama antara kedua versi tersebut:
+SukaHati hadir dalam dua versi: Free dan Premium. Berikut adalah perbedaan utama antara kedua versi tersebut:
 
-### Versi Free
 - **Pengelolaan Data Lengkap**: Kelola data konsumen, salesman, supplier, dan produk dengan mudah dan terintegrasi dalam satu platform.
 - **Stok Penjualan & Alokasi**: Pantau stok produk dan kelola alokasi dengan efisien.
 - **Cetak Invoice**: Buat dan cetak invoice penjualan dengan cepat dan akurat.
 - **Kartu Stok**: Tinjau stok produk saat ini untuk memastikan ketersediaan barang.
-
-### Versi Premium
-- **Mutasi Antar Cabang**: Kelola mutasi stok antar cabang dengan mudah untuk menjaga keseimbangan stok.
-- **Retur Penjualan**: Proses retur penjualan dengan fitur yang lengkap untuk memudahkan pengelolaan.
-- **Export Data**: Ekspor data ke Microsoft Excel untuk analisis lebih lanjut dan pelaporan.
-- **Histori Kartu Stok**: Lihat histori lengkap masuk dan keluarnya stok untuk pelacakan yang lebih baik.
-- **Notifikasi Email**: Dapatkan notifikasi penting melalui email untuk keamanan dan pemberitahuan akun.
-- **Pemulihan & Perubahan Akun**: Fitur pemulihan password dan perubahan email untuk kenyamanan pengguna.
-
-> [!NOTE]
-> Source Code O-Stock Versi Premium tersedia di [Karyakarsa](https://karyakarsa.com/josephines24/o-stock-website-program-stok-barang).
 
 ## Getting Started
 
 Anda perlu melakukan sedikit konfigurasi di bawah ini sebelum mulai menjalankan web O-Stock:
 1. Unduh file ZIP source code o-stock atau jalankan perintah berikut di terminal Anda:
    ```console
-   git clone https://github.com/josephines1/o-stock.git
+   git clone https://github.com/Nafars24/sukahatii.git
    ```
 
-2. Ekstrak file ZIP dan letakkan folder o-stock di dalam folder htdocs (misalnya D:\xampp\htdocs).
+2. Ekstrak file ZIP dan letakkan folder sukahatii di dalam folder htdocs (misalnya D:\xampp\htdocs).
 
-3. Buka folder o-stock di Visual Studio Code.
+3. Buka folder sukahatii di Visual Studio Code.
 
 4. Di Visual Studio Code, buka terminal dengan memilih `Terminal > New Terminal` di menu bagian atas, atau tekan ctrl + `
    
@@ -71,7 +59,7 @@ Anda perlu melakukan sedikit konfigurasi di bawah ini sebelum mulai menjalankan 
    - Konfirgurasikan database. Sesuaikan dengan database milik Anda:
      ```
      database.default.hostname = localhost
-     database.default.database = o-stock
+     database.default.database = sukahatii
      database.default.username = root
      database.default.password = 
      database.default.DBDriver = MySQLi
@@ -155,7 +143,7 @@ Anda perlu melakukan sedikit konfigurasi di bawah ini sebelum mulai menjalankan 
     
 9. Buka XAMPP Control Panel Anda dan start server Apache dan MySQL.
     
-10. Buka `localhost/phpmyadmin` di browser, lalu buat database baru dengan nama `o-stock` atau sesuaikan dengan nama database yang Anda inginkan.
+10. Buka `localhost/phpmyadmin` di browser, lalu buat database baru dengan nama `sukahatii` atau sesuaikan dengan nama database yang Anda inginkan.
 
 11. Buka kembali terminal di Visual Studio Code, jalankan perintah migrate dan seed.
     - Migrate
@@ -187,23 +175,10 @@ Anda perlu melakukan sedikit konfigurasi di bawah ini sebelum mulai menjalankan 
 ## First Usage
 
 ### Login
-Setelah melakukan instalasi dan konfigurasi O-Stock, Anda dapat melakukan login pada aplikasi dengan email dan password sebagai berikut.
+Setelah melakukan instalasi dan konfigurasi sukahatii, Anda dapat melakukan login pada aplikasi dengan email dan password sebagai berikut.
 
-#### Pusat
 ```
-Email: pusat@example.com
-Password: password
-```
-
-#### Cabang 1
-```
-Email: cabang1@example.com
-Password: password
-```
-
-#### Cabang 2
-```
-Email: cabang2@example.com
+Email: naufal@mpsi.com
 Password: password
 ```
 
@@ -212,7 +187,7 @@ Setelah berhasil melakukan login, Anda dapat mencoba menambahkan stok awal produ
 
 ## Services
 
-Layanan di bawah ini tersedia pada aplikasi O-Stock.
+Layanan di bawah ini tersedia pada aplikasi sukahatii.
 
 ### Layanan Utama
 
@@ -252,18 +227,6 @@ Layanan di bawah ini tersedia pada aplikasi O-Stock.
 - Kelola profil
 - Ubah password
 
-### Versi Premium
-- Mutasi antar cabang
-- Retur penjualan
-- Export data ke Microsoft Excel
-- Kartu stok dengan histori
-- Integrasi notifikasi email
-- Fitur pemulihan password melalui email
-- Ubah email dengan verifikasi
-
-## Database
-Berikut ini adalah struktur table database untuk aplikasi O-Stock.
-![O-Stock Database](https://github.com/josephines1/o-stock/blob/main/public/assets/img/readme/db_ostock.png "O-Stock")
 
 ## Multilevel Auth
 
@@ -298,10 +261,9 @@ Teknologi dalam aplikasi ini:
 
 ## Support
 
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/josephines24)
-[![KaryaKarsa](https://image.typedream.com/cdn-cgi/image/width=120,format=auto,fit=scale-down,quality=100/https://api.typedream.com/v0/document/public/07480db4-7b4e-4309-9be2-b4e218db150e/2IGRM5CUZESdabtjezsFTWnWFVR_karyakarsa-logo-white.png?bucket=document)](https://karyakarsa.com/josephines24)
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/zyfars)
 
 ## Credits
 
-> Made by [Josephine](https://josephines1.github.io/).
+> Made by [Naufal](https://Nafars24.github.io/).
 > Template by [tabler.io](tabler.io)
