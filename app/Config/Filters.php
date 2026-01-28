@@ -36,15 +36,18 @@ class Filters extends BaseConfig
      * @var array<string, array<string, array<string, string>>>|array<string, list<string>>
      */
     public array $globals = [
-    'before' => [
-        'honeypot',
-        // 'login', // ❌ HAPUS DARI GLOBAL
-        // 'csrf',
-    ],
-    'after' => [
-        'toolbar',
-    ],
-];
+        'before' => [
+            'honeypot',
+            'login',
+            // 'csrf',
+            // 'invalidchars',
+        ],
+        'after' => [
+            'toolbar',
+            // 'honeypot',
+            // 'secureheaders',
+        ],
+    ];
 
     /**
      * List of filter aliases that works on a
