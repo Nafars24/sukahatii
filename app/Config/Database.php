@@ -29,7 +29,7 @@ class Database extends Config
     public array $default = [
         'DSN'          => '',
         'hostname'     => 'ballast.proxy.rlwy.net',
-        'username'     => 'railway',
+        'username'     => 'root',
         'password'     => 'vyshwGwSMUskMJPIqKLLHRmqFJFSYcXq',
         'database'     => 'railway',
         'DBDriver'     => 'MySQLi',
